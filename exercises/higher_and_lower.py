@@ -9,8 +9,8 @@ def highest_and_lowest(string_o_numbers):
     print(data)
 
     return {
-        'highest':max(data),
-        'lowest':min(data)
+        'highest':max(intlist),
+        'lowest':min(intlist)
     }
 
 def test_highest_and_lowest_solution():
