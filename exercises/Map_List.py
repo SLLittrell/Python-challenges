@@ -1,7 +1,12 @@
+# Write a function that takes two parameters. The first parameter should be a list of lists. 
+# The second should be a lambda function. 
+# The function should map the lambda function over the contents of the inner lists
+
 def map_it(inp, func):
+    result=[]
     for item in inp:
-        result=map(func, item)
-        return(result)
+        result.append(list(map(func, item)))
+    return result   
 
 def test_map_it_solution():
      numbers = [[1,2,3,4], [5,6,7,8,9], [0,2,4]]
