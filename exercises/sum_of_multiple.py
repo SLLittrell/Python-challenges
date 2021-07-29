@@ -4,9 +4,16 @@
 
 def sum_of_multiples(num):
     if num >= 0:
-        a = list(range(3,(5 * 3)+1, 3))
-        numbers = []
+        a = list(range(3,num, 3))
+        b= list(range(5,num, 5))
         for item in a:
+            if item % 3 !=0:
+                result += item 
+        for item in b:
+            if item % 5 !=0:
+                result += item
+
+    
          
 
 def test_sum_of_multiples_solution():
