@@ -3,17 +3,15 @@
 # 5 less than (but not equal to) the number passed in
 
 def sum_of_multiples(num):
-    if num >= 0:
-        a = list(range(3,num, 3))
-        b= list(range(5,num, 5))
-        for item in a:
-            if item % 3 !=0:
-                result += item 
-        for item in b:
-            if item % 5 !=0:
-                result += item
+    # multi_list = []
+    # for i in range(num):
+    #     if i % 3 == 0 or i % 5 == 0:
+    #         multi_list.append(i)
 
-    
+    # return sum(multi_list)
+
+
+   return sum([i for i in range(num) if i % 3 == 0 or i % 5 == 0])
          
 
 def test_sum_of_multiples_solution():
